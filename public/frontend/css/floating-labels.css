@@ -1,0 +1,38 @@
+.input-float input {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.input-float input {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+.input-float form div {
+  position: relative;
+}
+
+.input-float form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.input-float input:focus~label,
+.input-float input:valid~label {
+  top: -12px;
+  left: 0;
+  color:#eb5d1e;
+}
+
+.input-float input:focus,
+.input-float input:valid {
+  border-bottom: 2px solid#eb5d1e;
+}
